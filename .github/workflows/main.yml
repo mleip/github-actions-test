@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: "$DOCKER_IMAGE:${{ env.GITHUB_RUN_ID }}"
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
