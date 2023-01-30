@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-Type" content="text/html; utf-8" />
+        <meta name="robots" content="NOINDEX,NOFOLLOW" />
+        <meta name="description" content="Dies ist die Lösung zur Übung" />
+        <meta name="keywords" content="Techstarter, Selbststudium, Übung, HTML Kurs" />
+        <meta name="author" content="Techstarter Dozent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="style.css" rel="stylesheet">
+        <title>TechstarterToDo App</title>
+    </head>
+
+    <body>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 offset-md-2 col-md-8">
+                    <h2>TechstarterToDo App</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 offset-md-2 col-md-8">
+                    <div class="card rounded-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Eintrag hinzufügen</h4>
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="input-group mb-3 rounded-0">
+                                        <span class="input-group-text rounded-0 border-right-0" id="basic-addon1">Neue
+                                            Todo:</span>
+                                        <input type="text" class="form-control rounded-0 input-border" placeholder="Lernen"
+                                            id="txtTodoItem">
+                                        <button type="button" onClick="addTodo()" class="btn btn-primary rounded-0">Eintrag
+                                            hinzufügen</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col">
+                                    <h3>Aktuelle Todos</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="list-group rounded-0 list-group-flush" id="liste">
+                                        <!-- Elemente werden via jQuery geladen-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 offset-md-2 col-md-8">
+                    <small class="text-muted">&copy; 2023 Michael Leipner</small>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="functions.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
